@@ -1,0 +1,25 @@
+// color
+$text-black: #333333
+$theme-green: #20C732
+
+// break point
+$bp2: 1024px
+$bp1: 640px
+
+// container width
+$c-width-pc: 1024px
+$c-width-tab: calc(100% - (20px * 2))
+$c-width-sp: calc(100% - (12px * 2))
+
+// media
+@mixin pc
+  @media (min-width: ($bp2))
+    @content
+
+@mixin tab
+  @media (max-width: ($bp2))
+    @content
+
+@mixin sp
+  @media (max-width: ($bp1))
+    @content

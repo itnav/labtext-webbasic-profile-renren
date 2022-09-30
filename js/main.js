@@ -15,7 +15,15 @@ const menuBtn = document.getElementById("menuBtn");
 const header = document.getElementById("header");
 
 // TODO:穴埋め5
+menuBtn.addEventListener("click", () => {
+  header.classList.toggle("active");
+});
 
 const navLink = document.getElementsByClassName("nav-link");
 
 // TODO:穴埋め6
+Array.from(navLink).forEach((link) => {
+  link.addEventListener("click", () => {
+    header.classList.toggle("active");
+  });
+});

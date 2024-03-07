@@ -1,7 +1,7 @@
 /* html5doctor.com Reset Stylesheet v1.6.1 Last Updated: 2010-09-17 Author: Richard Clark - http://richclarkdesign.com Twitter:@rich_clark */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;700&display=swap");
+@import url("/fonts/Dont-GR-SquareVF.ttf");
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -157,9 +157,8 @@ img {
   font-size: 20px;
   font-weight: bold;
   height: 70px;
-  color: #ffffff;
   padding: 16px;
-  filter: drop-shadow(rgba(0, 0, 0, 0.3764705882) 1px 1px 3px);
+  filter: drop-shadow(rgba(255, 255, 255, 0.3764705882) 1px 1px 3px);
 }
 #header .nav-menu .nav-link:hover {
   text-decoration: underline;
@@ -182,7 +181,7 @@ img {
 }
 .swiper-container .top-title {
   font-weight: normal;
-  font-family: "Lobster Two", cursive;
+  font-family: "Dont-GR-Square", cursive;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -200,9 +199,8 @@ section {
   padding-top: 160px;
 }
 section h2.section-title {
-  font-family: "Lobster Two", cursive;
+  font-family: "Dont-GR-Square", cursive;
   font-size: 50px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   position: relative;
@@ -220,8 +218,7 @@ section h2.section-title:after {
   border-top: 2px solid #000;
   background-image: repeating-linear-gradient(-45deg, #000, #000 1px, transparent 2px, transparent 5px);
   background-size: 7px 7px;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 section .container {
   max-width: 1024px;
@@ -287,6 +284,12 @@ section .container {
 .access .container .info .access-link {
   display: flex;
   flex-direction: column;
+}
+.access .container .info .access-link a {
+  color: #007b7b;
+}
+.access .container .info .access-link a:hover {
+  text-decoration: underline;
 }
 .access .container iframe {
   width: 100%;

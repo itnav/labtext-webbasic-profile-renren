@@ -1,174 +1,111 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-  <meta
-    name="description"
-    content="ナブカツ用のウェブサイトです。基本的なウェブのフロントエンドの書き方、JavaScriptの書き方を学びます。"
-  />
-  <meta
-    name="keywords"
-    content="ナブカツ,横須賀,ポートフォリオ,ウェブサイト,プログラミング,フロントエンド,学習,イトナブ"
-  />
+    <title>Profile site</title>
+    <link rel="stylesheet" href="/styles/style.css" />
 
-  <title>Profile site</title>
-  <link
-    rel="stylesheet"
-    href="css/style.css"
-  />
-</head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js" defer></script>
+    <script src="/scripts/main.js" defer></script>
+  </head>
 
-<body>
-  <!-- Header -->
-  <header
-    id="header"
-    class="is-flex"
-  >
-    <div class="head-wrap">
-      <a
-        class="top-link is-flex"
-        href="#"
-      ><img src="img/logo.png" /></a>
-      <div id="menuBtn">
-        <div class="line-item"></div>
-        <div class="line-item"></div>
-        <div class="line-item"></div>
-      </div>
-    </div>
-    <!-- TODO:穴埋め1 -->
-    <nav class="nav-menu is-flex">
-      <a
-        class="nav-link"
-        href="#profile"
-      >Profile</a>
-      <a
-        class="nav-link"
-        href="#works"
-      >Works</a>
-      <a
-        class="nav-link"
-        href="#access"
-      >Access</a>
-    </nav>
-  </header>
-
-  <!-- Swiper -->
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="img/photo1.jpg" /></div>
-      <div class="swiper-slide"><img src="img/photo2.jpg" /></div>
-    </div>
-    <h1 class="top-title is-flex">Let's enjoy Coding!</h1>
-  </div>
-
-  <!-- Profile -->
-  <section
-    class="profile"
-    id="profile"
-  >
-    <h2 class="section-title center">Profile</h2>
-    <div class="container is-flex center">
-      <!-- TODO:穴埋め2 -->
-      <img
-        class="profile-image"
-        src="img/profile.jpg"
-        alt="profile-photo"
-      >
-      <div class="profile-text">
-        <p>れんれん（本名：八重樫 蓮）/ 2001年生まれ</p>
-        <p>株式会社イトナブ 教育部 Webデザイナー</p>
-        <p>グラフィック・モーションデザイン、映像制作、Web制作など あと電気工事</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Works -->
-  <section
-    class="works"
-    id="works"
-  >
-    <h2 class="section-title center">Works</h2>
-    <div class="container is-flex center">
-      <!-- TODO:穴埋め3 -->
-      <div class="item">
-        <h3 class="item-title">Photograph</h3>
-        <img
-          class="cover"
-          src="img/image1.jpg"
-        />
-        <p>
-          何気ない街や自然の風景を記録しながら、普段意識して目を向けない部分を被写体にしています。
-        </p>
-      </div>
-      <div class="item">
-        <h3 class="item-title">Design</h3>
-        <img
-          class="cover"
-          src="img/image2.jpg"
-        />
-        <p>
-          ロゴや名刺、ポスターなどのグラフィックデザイン、それに動きを加えるアニメーションも制作します。
-        </p>
-      </div>
-      <div class="item">
-        <h3 class="item-title">Music</h3>
-        <img
-          class="cover"
-          src="img/image3.jpg"
-        />
-        <p>
-          ドラムやカホン、その他パーカッションにあたる楽器の演奏をします。
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Image -->
-  <section class="section-image">
-    <img src="img/book.jpg" />
-  </section>
-
-  <!-- Access -->
-  <section
-    class="access"
-    id="access"
-  >
-    <h2 class="section-title center">Access</h2>
-    <div class="container center">
-      <!-- TODO:穴埋め4 -->
-      <div class="info is-flex">
-        <div class="access-text">
-          <p class="place-name">株式会社イトナブ</p>
-          <p>〒986-0854</p>
-          <p>宮城県石巻市大街道北1-1-16 かじやビル2F</p>
-        </div>
-        <div class="access-link">
-          <a href="tel:000-1234-5678">000-1234-5678</a>
-          <a href="mailto:info@itnav.jp">info@itnav.jp</a>
-          <a href="https://itnav.jp/">https://itnav.jp/</a>
+  <body>
+    <!-- Header -->
+    <header id="header" class="is-flex">
+      <div class="head-wrap">
+        <a class="top-link is-flex" href="#"><img src="/images/logo.png" /></a>
+        <div id="menuBtn">
+          <div class="line-item"></div>
+          <div class="line-item"></div>
+          <div class="line-item"></div>
         </div>
       </div>
+      <nav class="nav-menu is-flex">
+        <a class="nav-link" href="/#profile">Profile</a>
+        <a class="nav-link" href="/#works">Works</a>
+        <a class="nav-link" href="/#access">Access</a>
+      </nav>
+    </header>
 
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12808.903513775093!2d141.2797347377042!3d38.430498745537015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f89a3989bc995f1%3A0x3c85b943ccb189ac!2z44Kk44OI44OK44OW!5e0!3m2!1sja!2sjp!4v1664512823131!5m2!1sja!2sjp"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="/images/photo1.jpg" /></div>
+        <div class="swiper-slide"><img src="/images/photo2.jpg" /></div>
+      </div>
+      <h1 class="top-title is-flex">Let's enjoy Coding!</h1>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="site-footer">&copy; 2022 Itnav</footer>
+    <!-- Profile -->
+    <section class="profile" id="profile">
+      <h2 class="section-title center">Profile</h2>
+      <div class="container is-flex center">
+        <img class="profile-image" src="/images/profile.jpg" alt="profile-photo" />
+        <div class="profile-text">
+          <p>れんれん（本名：八重樫 蓮）/ 2001年生まれ</p>
+          <p>株式会社イトナブ 教育部 Webデザイナー</p>
+          <p>グラフィック・モーションデザイン、映像制作、Web制作など あと電気工事</p>
+        </div>
+      </div>
+    </section>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
+    <!-- Works -->
+    <section class="works" id="works">
+      <h2 class="section-title center">Works</h2>
+      <div class="container is-flex center">
+        <div class="item">
+          <h3 class="item-title">Photograph</h3>
+          <img class="cover" src="/images/image1.jpg" />
+          <p>何気ない街や自然の風景を記録しながら、普段意識して目を向けない部分を被写体にしています。</p>
+        </div>
+        <div class="item">
+          <h3 class="item-title">Design</h3>
+          <img class="cover" src="/images/image2.jpg" />
+          <p>ロゴや名刺、ポスターなどのグラフィックデザイン、それに動きを加えるアニメーションも制作します。</p>
+        </div>
+        <div class="item">
+          <h3 class="item-title">Music</h3>
+          <img class="cover" src="/images/image3.jpg" />
+          <p>ドラムやカホン、その他パーカッションにあたる楽器の演奏をします。</p>
+        </div>
+      </div>
+    </section>
 
+    <!-- Image -->
+    <section class="section-image">
+      <img src="/images/book.jpg" />
+    </section>
+
+    <!-- Access -->
+    <section class="access" id="access">
+      <h2 class="section-title center">Access</h2>
+      <div class="container center">
+        <div class="info is-flex">
+          <div class="access-text">
+            <p class="place-name">株式会社イトナブ</p>
+            <p>〒986-0854</p>
+            <p>宮城県石巻市大街道北1-1-16 かじやビル2F</p>
+          </div>
+          <div class="access-link">
+            <a href="tel:000-1234-5678">000-1234-5678</a>
+            <a href="mailto:info@itnav.jp">info@itnav.jp</a>
+            <a href="https://itnav.jp/">https://itnav.jp/</a>
+          </div>
+        </div>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12808.903513775093!2d141.2797347377042!3d38.430498745537015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f89a3989bc995f1%3A0x3c85b943ccb189ac!2z44Kk44OI44OK44OW!5e0!3m2!1sja!2sjp!4v1664512823131!5m2!1sja!2sjp"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">&copy; 2024 RenRen</footer>
+  </body>
 </html>
